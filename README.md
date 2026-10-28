@@ -72,23 +72,32 @@ Welcomes users, provides general assistance, and offers a fallback response when
 The supplied Dialogflow ES agent contains the following intent files:
 
 
- 1 - Welcome the parent: Greets users and introduces the chatbot.
- 2 - General help: Explains the chatbot's supported functions.
- 3 - School Timings: Provides configured school-hour information. 
- 4 - Attendance: Returns the sample attendance summary.
- 5 - Absence Reason: Handles enquiries about student absence.
- 6 - Leave Application: Provides guidance about leave applications. 
- 7 - Exam schedule: Shares the examination timetable link. 
- 8 - Exam results: Handles examination-result enquiries. 
- 9 - Homework: Responds to homework-related questions.
-10 - Fee details: Provides configured fee information. 
-11 - Fee Payment: Handles fee-payment enquiries. 
-12 - Fee deadlines: Provides information about payment deadlines.
-13 - School Announcement: Shares configured school announcements. 
-14 - Teacher Contact: Handles teacher-contact enquiries.
-15 - Student Information: Handles general student-information enquiries.
-16 - Default Fallback Intent : Responds when the chatbot cannot match a user's message.
-17 - Goodbye: ends the conversation.
+
+Copy and paste this Markdown table directly into your GitHub `README.md` file. GitHub will automatically format it into a readable table.
+
+## Dialogflow ES – Intent Overview
+
+| No. | Intent Name             | Description                                              |
+| --- | ----------------------- | -------------------------------------------------------- |
+| 1   | Welcome the Parent      | Greets users and introduces the chatbot.                 |
+| 2   | General Help            | Explains the chatbot's supported functions.              |
+| 3   | School Timings          | Provides configured school-hour information.             |
+| 4   | Attendance              | Returns the sample attendance summary.                   |
+| 5   | Absence Reason          | Handles enquiries about student absence.                 |
+| 6   | Leave Application       | Provides guidance about leave applications.              |
+| 7   | Exam Schedule           | Shares the examination timetable link.                   |
+| 8   | Exam Results            | Handles examination-result enquiries.                    |
+| 9   | Homework                | Responds to homework-related questions.                  |
+| 10  | Fee Details             | Provides configured fee information.                     |
+| 11  | Fee Payment             | Handles fee-payment enquiries.                           |
+| 12  | Fee Deadlines           | Provides information about payment deadlines.            |
+| 13  | School Announcement     | Shares configured school announcements.                  |
+| 14  | Teacher Contact         | Handles teacher-contact enquiries.                       |
+| 15  | Student Information     | Handles general student-information enquiries.           |
+| 16  | Default Fallback Intent | Responds when the chatbot cannot match a user's message. |
+| 17  | Goodbye                 | Ends the conversation.                                   |
+
+
 
 These intents cover the major communication needs identified in the ParentConnect AI scenario.
 
@@ -97,17 +106,23 @@ These intents cover the major communication needs identified in the ParentConnec
 The supplied agent includes the following custom entities:
 
 
- 1  -  Subject : Represents academic subjects.
- 2  -  Announcement_type : Categorizes school announcements.
- 3  -  Absence_reason : Represents reasons for student absence.
- 4  -  Day_type : Represents categories of days.
- 5  -  Period : Represents school periods or time slots.
- 6  -  Section` : Represents student sections.
- 7  -  Fee type : Categorizes types of school fees.
- 8  -  Payment method : Represents payment methods.
- 9  -  Exam type : Categorizes examinations.
- 10 - Grades : Represents grades or academic levels.
- 11 - Contact_role : Identifies contact roles, such as teachers.
+ ## Dialogflow ES – Entity Overview
+
+| No. | Entity Name         | Description                                 |
+| --- | ------------------- | ------------------------------------------- |
+| 1   | Subject           | Represents academic subjects.               |
+| 2   | Announcement_type | Categorizes school announcements.           |
+| 3   | Absence_reason    | Represents reasons for student absence.     |
+| 4   | Day_type          | Represents categories of days.              |
+| 5   | Period            | Represents school periods or time slots.    |
+| 6   | Section           | Represents student sections.                |
+| 7   | Fee type          | Categorizes types of school fees.           |
+| 8   | Payment method    | Represents payment methods.                 |
+| 9   | Exam type         | Categorizes examinations.                   |
+| 10  | Grades            | Represents grades or academic levels.       |
+| 11  | Contact_role      | Identifies contact roles, such as teachers. |
+
+
 
 Entities help Dialogflow identify relevant categories in user messages and support the organisation of school-related queries.
 
@@ -149,7 +164,7 @@ ParentConnect AI: Explains the supported school-information categories.
 
 The GitHub repository is organised to keep the agent export, documentation, and testing materials together.
 
-text
+```
 ParentConnect-AI/
 │
 ├── README.md
@@ -164,7 +179,7 @@ ParentConnect-AI/
 │   └── test-plan.md
 │
 └── PUBLISHING-CHECKLIST.md
-
+```
 
 ## 10. Installation and Setup
 
